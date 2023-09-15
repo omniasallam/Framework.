@@ -1,0 +1,24 @@
+#About{
+    margin-top: 80px;
+}
+.about{
+    background-color:  #1abc9c;
+}
+
+.star-brd::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 80px;
+    height: 4px;
+    background-color:white;
+ }
+.star-brd::before{
+    content: "";
+    position: absolute;
+    top: 11px;
+   right: 45px;
+    width: 80px;
+     height: 4px;
+     background-color:white;
+}
