@@ -11,14 +11,14 @@
 
         <form >
             <div class="form w-50 p-3 mx-auto ">
-           <label for="yourname" class="ps-3 d-none">userName :</label>
-           <input type="text" id="yourname" placeholder="userName" name="yourname" class="form-control border-top-0 border-end-0 border-start-0 mb-4 mt-3 p-3 shadow-none">
-           <label for="yourage" class="ps-3 d-none">userAge :</label>
-           <input type="number" id="yourage" placeholder="userAge" name="yourage" class="form-control border-top-0 border-end-0 border-start-0 mb-4 mt-3 p-3 shadow-none">
-           <label for="youremail" class="ps-3 d-none">userEmail :</label>
-           <input type="email" id="youremail" placeholder="userEmail" name="youremail" class="form-control border-top-0 border-end-0 border-start-0 mb-4 mt-3 p-3 shadow-none">
-           <label for="yourpassword" class="ps-3 d-none">userPassword :</label>
-           <input type="password" id="yourpassword" placeholder="userPassword" name="yourpassword" class="form-control border-top-0 border-end-0 border-start-0 mb-4 mt-3 p-3 shadow-none">
+           <label for="yourname" class="ps-3 " *ngIf="user!==''">{{userName}} :</label>
+           <input [(ngModel)]="user"   type="text" id="yourname" placeholder="userName" name="yourname" class="form-control border-top-0 border-end-0 border-start-0 mb-4 mt-3 p-3 shadow-none" >
+           <label for="yourage" class="ps-3 " *ngIf="age!=='' ">{{userAge}} :</label>
+           <input [(ngModel)]="age" type="number" id="yourage" placeholder="userAge" name="yourage" class="form-control border-top-0 border-end-0 border-start-0 mb-4 mt-3 p-3 shadow-none">
+           <label for="youremail" class="ps-3 " *ngIf="email!==''">{{userEmail}} :</label>
+           <input [(ngModel)]="email" type="email" id="youremail" placeholder="userEmail" name="youremail" class="form-control border-top-0 border-end-0 border-start-0 mb-4 mt-3 p-3 shadow-none">
+           <label for="yourpassword" class="ps-3 " *ngIf="password!==''"> {{userPassword}}:</label>
+           <input [(ngModel)]="password" type="password" id="yourpassword" placeholder="userPassword" name="yourpassword" class="form-control border-top-0 border-end-0 border-start-0 mb-4 mt-3 p-3 shadow-none">
            <div class="button">
             <button class="btn btn-info text-white mt-4">SendMessage</button>
         </div>

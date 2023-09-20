@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+  userName:string='userName';
+  user:string='';
+  userAge:string='userAge';
+  age:any='';
+  userEmail:string='userEmail';
+  email:any=''
+  userPassword:string='userPassword';
+  password:any=''
+
+
 
 }
